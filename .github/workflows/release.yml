@@ -1,0 +1,41 @@
+name: Build and Release MyResume
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          latexmk_use_xelatex: true
+
+      - name: Rename PDF with name and date
+        run: |
+          FULL_DATE="$(date -u +%Y-%m-%d)"
+          mv resume.pdf "KhalidAlSubaie_${FULL_DATE}.pdf"
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          FULL_DATE="$(date -u +%Y-%m-%d)"
+          DATE_TAG="v$(date -u +%Y.%m.%d)"
+          TAG="$DATE_TAG"
+          SUFFIX=1
+          while gh release view "$TAG" &>/dev/null; do
+            TAG="${DATE_TAG}.${SUFFIX}"
+            SUFFIX=$((SUFFIX + 1))
+          done
+          gh release create "$TAG" "KhalidAlSubaie_${FULL_DATE}.pdf" \
+            --title "Resume $TAG" \
+            --notes "Compiled from $(git rev-parse --short HEAD)"
