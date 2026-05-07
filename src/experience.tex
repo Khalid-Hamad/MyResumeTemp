@@ -6,7 +6,7 @@
     {HUMAIN}{Sep 2025 -- Present}
     {Lead Engineer, Application Science (Advanced Technologies Lab)}{Riyadh, Saudi Arabia}
     \resumeItemListStart
-        \resumeItem{Built and fine-tuned a Kubernetes-aware LLM converting natural-language intent into validated kubectl commands; applied QLoRA fine-tuning and safety controls (syntax validation, allowlist/denylist rules) to reduce invalid or risky outputs (1,966-case evaluation suite).}
+        \resumeItem{Built and fine-tuned a Kubernetes-aware LLM converting natural-language intent into validated, executable kubectl commands; applied QLoRA fine-tuning and safety controls (syntax validation, allowlist/denylist rules) to reduce invalid or risky outputs (1,966-case evaluation suite, high command validity, unsafe operations blocked by design).}
         \resumeItem{Implemented a reproducible evaluation workflow for comparing fine-tuning variants and prompting strategies, including an A/B test harness with tracked metrics (success rate, safety rate, latency distributions p50/p95).}
         \resumeItem{Contributed across multiple AI solution use cases for LLMs and computer vision, translating requirements into deployable prototypes with measurable acceptance criteria (\textasciitilde10 stakeholder demos shipped).}
         \resumeItem{Implementing and developing an agent-based eLearning platform as technical lead, overseeing architecture, delivery, and cross-functional coordination.}
@@ -16,19 +16,19 @@
     {Saudi Company for Artificial Intelligence (SCAI) \normalfont\small(merged into HUMAIN)}{Feb 2023 -- Sep 2025}
     {Lead Software Engineer (AI Lab) / Senior DevOps Engineer, Ops Team Lead}{Riyadh, Saudi Arabia}
     \resumeItemListStart
-        \resumeItem{Led a cloud operations team of 6, supporting multiple AI applications across dev/test/prod; defined operational practices achieving 99.9\% uptime, MTTR < 30 min, incidents reduced to \textasciitilde2--3/month.}
+        \resumeItem{Led a cloud operations team of 6, supporting multiple AI applications across dev/test/prod; defined operational practices (monitoring, incident response, release governance) achieving 99.9\% uptime, MTTR < 30 min, incidents reduced to \textasciitilde2--3/month.}
         \resumeItem{Established Azure DevOps as the standard engineering platform; migrated SCMs from GitLab and boards from Jira, consolidating workflows across 40+ repositories / 15+ projects.}
         \resumeItem{Designed and implemented GitFlow branching and PR governance, improving cross-team collaboration and release stability; reduced hotfixes and rollbacks by \textasciitilde35\% across 5+ teams.}
         \resumeItem{Standardized SDLC and delivery reporting, improving transparency and compliance; reduced lead time to 2--3 days and increased deployment frequency to weekly releases for core services.}
         \resumeItem{Built CI/CD pipelines and integrated Argo CD for GitOps-based releases, reducing manual deployment steps by \textasciitilde70\% and deployment time from \textasciitilde45 min to \textasciitilde10 min.}
-        \resumeItem{Implemented automated code quality and security scanning (SonarQube, Black Duck) across 35+ repositories, reducing critical/high findings by \textasciitilde40\%.}
+        \resumeItem{Implemented automated code quality and security scanning (SonarQube, Black Duck), expanding coverage to 35+ repositories and reducing critical/high findings by \textasciitilde40\% through early detection and gated pipelines.}
         \resumeItem{Optimized CI performance (pipeline configuration, caching, parallelization), reducing build duration from \textasciitilde18 min to \textasciitilde7 min.}
         \resumeItem{Designed Azure cloud infrastructure for AI initiatives; integrated Fortinet FW/WAF and built end-to-end observability (Azure Monitor, Application Insights, ELK) with TTD < 5 min and TTR < 30 min.}
         \resumeItem{Built AI/ML studios and MLOps workspace for R\&D, reducing environment setup time from \textasciitilde5 days to < 4 hours.}
         \resumeItem{Integrated AI applications with Microsoft Active Directory (SSO/OAuth), covering 10+ applications/services.}
-        \resumeItem{Led Azure Enterprise Agreement RFP, achieving \textasciitilde20\% annual cost reduction and \textasciitilde30\% improved license utilization.}
+        \resumeItem{Led the RFP process for an Azure Enterprise Agreement, optimizing licensing and consumption; achieved \textasciitilde20\% annual cost reduction and improved license/utilization efficiency by \textasciitilde30\%.}
         \resumeItem{Migrated corporate email from STC to Microsoft 365 with zero downtime, ensuring business continuity.}
-        \resumeItem{Led Cloud Fusion ERP integration with ZATCA for automated VAT invoice generation, processing 10,000+ invoices/month and reducing manual effort by \textasciitilde60\%.}
+        \resumeItem{Led Cloud Fusion ERP integration with ZATCA for automated VAT invoice generation and regulatory compliance, processing 10,000+ invoices/month and reducing manual effort by \textasciitilde60\%.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -37,7 +37,7 @@
     \resumeItemListStart
         \resumeItem{Built CI/CD pipelines using GitHub Actions across 12+ repositories, reducing deployment time from \textasciitilde30 min to \textasciitilde8 min.}
         \resumeItem{Designed and deployed a high-availability, compliant Design System platform aligned with government standards, achieving 99.9\% availability (SLA).}
-        \resumeItem{Integrated Azure DevOps for release automation and delivered comprehensive handover documentation and runbooks.}
+        \resumeItem{Integrated Azure DevOps for release automation and delivered comprehensive handover documentation and runbooks, ensuring long-term maintainability, audit readiness, and smooth operational ownership transfer.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -47,8 +47,9 @@
         \resumeItem{Led Azure DevOps operations for 50+ projects, supporting migration of legacy systems to Azure across multiple environments.}
         \resumeItem{Developed and maintained 120+ CI/CD pipelines, supporting 40--50 deployments/week with a \textasciitilde98\% success rate.}
         \resumeItem{Improved SDLC through branch strategy and release management practices, reducing production defects by \textasciitilde30\% and release rollbacks by \textasciitilde35\%.}
-        \resumeItem{Configured self-hosted agents (pool size: 12), reducing average pipeline queue time by \textasciitilde60\%.}
-        \resumeItem{Designed CI/CD pipelines for Flutter mobile apps (6 apps) with bi-weekly release cadence; established DR plan (RTO < 1 hour, RPO < 15 min).}
+        \resumeItem{Installed and configured Azure DevOps self-hosted agents to scale automation and enable real-time pipeline execution and monitoring (agent pool size: 12), reducing average pipeline queue time by \textasciitilde60\%.}
+        \resumeItem{Designed CI/CD pipelines for Flutter mobile applications, enabling faster iteration cycles across 6 mobile apps with a bi-weekly release cadence.}
+        \resumeItem{Established a Disaster Recovery (DR) plan with automated backups and failover strategies, improving platform resilience (RTO < 1 hour, RPO < 15 min).}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -56,7 +57,7 @@
     {IT Operations Officer}{Riyadh, Saudi Arabia}
     \resumeItemListStart
         \resumeItem{Coordinated external vendors to deliver company website from requirements through production launch, completing delivery in \textasciitilde10 weeks covering 20+ pages/features.}
-        \resumeItem{Tested and evaluated internal systems, resolving 100+ issues with average time-to-resolution of < 3 days.}
+        \resumeItem{Tested and evaluated internal systems, resolving quality and operational issues; closed 100+ issues with an average time-to-resolution of < 3 days, improving overall system reliability and efficiency.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
