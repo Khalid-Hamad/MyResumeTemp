@@ -1,12 +1,12 @@
 # MyResume
 
-[![Build and Release](https://github.com/iamdotdev/MyResumeTemp/actions/workflows/release.yml/badge.svg)](https://github.com/iamdotdev/MyResumeTemp/actions/workflows/release.yml)
+[![Build and Release](https://github.com/Khalid-Hamad/MyResumeTemp/actions/workflows/release.yml/badge.svg)](https://github.com/Khalid-Hamad/MyResumeTemp/actions/workflows/release.yml)
 
 LaTeX resume that is automatically compiled and released as a PDF via GitHub Actions on every push to `main`.
 
 ## Download
 
-Grab the latest PDF from the [Releases](https://github.com/iamdotdev/MyResumeTemp/releases/latest) page.
+Grab the latest PDF from the [Releases](https://github.com/Khalid-Hamad/MyResumeTemp/releases/latest) page.
 
 ## Build Locally
 

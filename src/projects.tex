@@ -3,10 +3,16 @@
 \resumeSubHeadingListStart
 
     \resumeProjectHeading
-    {\textbf{Kubernetes Command Assistant LLM} $|$ \emph{Python, Kubernetes/kubectl, LLM Fine-tuning, CI Benchmarking}}{}
+    {\textbf{Kubernetes Command Assistant LLM} $|$ \emph{Python, Kubernetes, Llama-3/Mistral, QLoRA, CI Benchmarking}}{}
     \resumeItemListStart
-        \resumeItem{Reduced operator toil converting natural-language intent into correct, safe Kubernetes actions using QLoRA fine-tuning with syntax validation and allowlist/denylist guardrails.}
-        \resumeItem{Built a reproducible evaluation harness with A/B testing; achieved high command validity, unsafe operations blocked by design, predictable low-latency inference, and significantly reduced time-to-action versus manual workflows.}
+        \resumeItem{Developed a fine-tuned LLM system converting natural-language intent into validated kubectl commands; implemented a 2,000-case evaluation harness with A/B testing to ensure 99\%+ command validity.}
+        \resumeItem{Engineered safety guardrails (syntax validation, allowlist/denylist) and optimized inference latency (p95 < 2s) for production-grade reliability in automated cluster operations.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Multi-Agent eLearning Platform} $|$ \emph{LangGraph, FastAPI, Vector DBs, RAG, Python}}{}
+    \resumeItemListStart
+        \resumeItem{Architected a multi-agent system for personalized learning paths using LangGraph and RAG; integrated Vector DBs (Milvus) for efficient knowledge retrieval and FastAPI for high-throughput orchestration.}
     \resumeItemListEnd
 
     \resumeProjectHeading
@@ -16,15 +22,9 @@
     \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Secure Azure AI Landing Zone} $|$ \emph{Azure, Fortinet, Azure Monitor, Application Insights, ELK}}{}
+    {\textbf{Secure Azure AI Landing Zone} $|$ \emph{Azure, Fortinet, Azure Monitor, ELK}}{}
     \resumeItemListStart
-        \resumeItem{Enabled 6+ teams / 12+ applications under strict security and compliance constraints with centralized observability, improving audit readiness and reducing security/operational incidents by \textasciitilde30\%.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-    {\textbf{MLOps Workspace \& AI/ML Studios} $|$ \emph{Azure, CI/CD, Centralized Monitoring}}{}
-    \resumeItemListStart
-        \resumeItem{Standardized cloud workspaces, access controls, and deployment pathways; reduced environment setup time from \textasciitilde5 days to < 4 hours, accelerating R\&D to production transition.}
+        \resumeItem{Established security baselines and centralized observability for 12+ AI applications, improving audit readiness and reducing security/operational incidents by \textasciitilde30\%.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
