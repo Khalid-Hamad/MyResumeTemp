@@ -13,3 +13,14 @@
 *.vrb
 *.dvi
 *.xdv
+
+# im-agent-os configs (local AI tooling, not part of the CV source)
+.claude/
+.codex/
+.gemini/
+AGENTS.md
+i18n-ar-en.md
+translate-ui.md
+
+# Local scratch
+temp/
