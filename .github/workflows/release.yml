@@ -22,7 +22,7 @@ jobs:
       - name: Rename PDF with name and date
         run: |
           FULL_DATE="$(date -u +%Y-%m-%d)"
-          mv resume.pdf "KhalidAlSubaie_${FULL_DATE}.pdf"
+          mv resume.pdf "KhalidAlOraini_${FULL_DATE}.pdf"
 
       - name: Create release
         env:
@@ -36,6 +36,6 @@ jobs:
             TAG="${DATE_TAG}.${SUFFIX}"
             SUFFIX=$((SUFFIX + 1))
           done
-          gh release create "$TAG" "KhalidAlSubaie_${FULL_DATE}.pdf" \
+          gh release create "$TAG" "KhalidAlOraini_${FULL_DATE}.pdf" \
             --title "Resume $TAG" \
             --notes "Compiled from $(git rev-parse --short HEAD)"
